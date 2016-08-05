@@ -1,6 +1,6 @@
 ## Go-oo
 
-* Simple sample of object oriented web servers in go.
+* Sample of object oriented web servers in go.
 
 TODO: Running server
 
