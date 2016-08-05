@@ -1,4 +1,4 @@
-## Go-oo
+## Go oo
 
 * Sample of object oriented web servers in go.
 
