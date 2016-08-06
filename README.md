@@ -11,6 +11,10 @@ TODO: Running server
 - Push to the branch (`git push origin my-new-feature`)
 - Create new Pull Request
 
+## Badges
+
+[![Build Status](https://circleci.com/gh/rafaeljesus/go-oo.svg?style=svg)](https://circleci.com/gh/rafaeljesus/go-oo)
+
 ---
 
 > GitHub [@rafaeljesus](https://github.com/rafaeljesus) &nbsp;&middot;&nbsp;
