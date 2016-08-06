@@ -1,0 +1,19 @@
+machine:
+  environment:
+    IMPORT_PATH: "github.com/rafaeljesus/go-oo"
+  services:
+    - docker
+dependencies:
+  pre:
+    - go get github.com/tools/godep
+  override:
+    - mkdir -p "$GOPATH/src/$IMPORT_PATH"
+    - rsync -azC --delete ./ "$GOPATH/src/$IMPORT_PATH/"
+deployment:
+  master:
+    branch: master
+    commands:
+      - docker build -t rafaeljesus/go-oo .
+      - docker login -e $DOCKERHUB_EMAIL -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+      - docker tag rafaeljesus/go-oo rafaeljesus/go-oo:master
+      - docker push rafaeljesus/go-oo:master
