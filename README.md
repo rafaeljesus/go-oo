@@ -1,6 +1,8 @@
 ## Go oo
 
 * Sample of object oriented web servers in go.
+* A minimal docker alpine container
+* Automatically pushes it to dockerhub if tests pass
 
 ## Docker
 This repository has automated image builds on hub.docker.com after successfully building and testing. See the `deployment` section of [circle.yml](circle.yml) for details on how this is done. Note that three environment variables need to be set on CircleCI for the deployment to work:
@@ -8,6 +10,11 @@ This repository has automated image builds on hub.docker.com after successfully 
   * DOCKER_EMAIL - The email address associated with the user with push access to the Docker Hub repository
   * DOCKER_USER - Docker Hub username
   * DOCKER_PASS - Docker Hub password (these are all stored encrypted on CircleCI, and you can create a deployment user with limited permission on Docker Hub if you like)
+
+```bash
+$ docker build --rm -t rafaeljesus/go-oo .
+$ docker run -it -t -p 3000:3000 --name go-oo rafaeljesus/go-oo
+```
 
 ## Contributing
 - Fork it
@@ -19,6 +26,7 @@ This repository has automated image builds on hub.docker.com after successfully 
 ## Badges
 
 [![Build Status](https://circleci.com/gh/rafaeljesus/go-oo.svg?style=svg)](https://circleci.com/gh/rafaeljesus/go-oo)
+[![](https://badge.imagelayers.io/rafaeljesus/go-oo:latest.svg)](https://imagelayers.io/?images=rafaeljesus/go-oo:latest 'Get your own badge on imagelayers.io')
 
 ---
 
