@@ -26,7 +26,7 @@ $ docker run -it -t -p 3000:3000 --name go-oo rafaeljesus/go-oo
 ## Badges
 
 [![Build Status](https://circleci.com/gh/rafaeljesus/go-oo.svg?style=svg)](https://circleci.com/gh/rafaeljesus/go-oo)
-[![](https://badge.imagelayers.io/rafaeljesus/go-oo:latest.svg)](https://imagelayers.io/?images=rafaeljesus/go-oo:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/rafaeljesus/go-oo.svg)](https://microbadger.com/images/rafaeljesus/go-oo "Get your own image badge on microbadger.com")
 
 ---
 
