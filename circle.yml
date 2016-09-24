@@ -6,6 +6,7 @@ deployment:
   master:
     branch: master
     commands:
+      - sh build
       - docker build -t rafaeljesus/go-oo .
       - docker login -e $DOCKERHUB_EMAIL -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
       - docker tag rafaeljesus/go-oo rafaeljesus/go-oo:master
