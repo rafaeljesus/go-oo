@@ -11,6 +11,7 @@ This repository has automated image builds on hub.docker.com after successfully 
   * DOCKER_USER - Docker Hub username
   * DOCKER_PASS - Docker Hub password (these are all stored encrypted on CircleCI, and you can create a deployment user with limited permission on Docker Hub if you like)
 
+Run:
 ```bash
 $ docker build --rm -t rafaeljesus/go-oo .
 $ docker run -it -t -p 3000:3000 --name go-oo rafaeljesus/go-oo
